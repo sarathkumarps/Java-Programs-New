@@ -15,11 +15,12 @@ public class Deserializationex {
 			ObjectInputStream in=new ObjectInputStream(input);
 			Student s=(Student)in.readObject();
 			System.out.println(s.id+" "+s.name+" "+s.age+" ");
+			//closing stream
 			in.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		
+		 
 		}
 		
 		
