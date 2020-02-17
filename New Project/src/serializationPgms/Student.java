@@ -4,10 +4,11 @@ import java.io.Serializable;
 
 public class Student implements Serializable{
 	
-	int id;
+	transient int id; //transient ,not seriasible,
 	String name;
 	int age;
 	
+	transient int cls;
 	Student(int id,String name,int age)
 	{
 		this.id=id;
